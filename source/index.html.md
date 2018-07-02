@@ -31,11 +31,12 @@ This API reference provides information on available endpoints and how to intera
 
 Content type name | Machine name | Description
 --- | --- | ---
-Analysis | lens_analysis | Description here ...
-Intelligence Update | lens_incident_report | Description here ...
-Forecast | lens_forecast | Description here ...
-Report | lens_report | Description here ...
-Graphics | lens_graphics | Description here ...
+Analysis | lens_analysis | In-depth analysis, focusing on deconstructing the tactical aspects of global security incidents and trends to highlight the implications and outlook. Where applicable, we also include recommendations and strategies to help clients identify and mitigate risks within their organizations.
+Intelligence Update | lens_incident_report | Reports of the tactics, trends and business implications of real-time critical security incidents.
+Forecast | lens_forecast | Published quarterly and annually, these forecasts provide perspective on future threats and allow clients to see where and how the global security landscape is changing.
+Report | lens_report | Reports offer in-depth and long-term protective intelligence assessments on special events or incidents. We will also profile groups, organizations or noteworthy risks/threats.
+Graphics | lens_graphics |
+Item of Interest | lens_item_of_interest | Brief updates on global security developments.
 
 **nid**: Node ID or Content ID
 
