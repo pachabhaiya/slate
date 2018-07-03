@@ -21,6 +21,8 @@ Stratfor provides global awareness and guidance to individuals, governments and 
 
 This API reference provides information on available endpoints and how to interact with it.
 
+**Base URL:** https://api.stratfor.com
+
 ## Content Types
 
 [https://www.drupal.org/docs/7/understanding-drupal/content-types](https://www.drupal.org/docs/7/understanding-drupal/content-types)
