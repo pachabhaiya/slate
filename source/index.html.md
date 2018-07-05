@@ -2866,6 +2866,8 @@ double encoded path alias = region%252Fsub-saharan-africa%252Fsouth-sudan
 
 ## Get search results
 
+> **Example 1:**<br />Return search results for "europe" keyword, sort by relevance.
+
 ```shell
 curl --request POST \
   --url 'https://api.stratfor.com/api/v3/search/param' \
@@ -2873,9 +2875,10 @@ curl --request POST \
   --header 'Content-Type: application/json' \
   --data '{
     "lens_type": "Worldview",
+    "keywords_include": "europe",
     "page": 0,
-    "limit": 5,
-    ...
+    "limit": 10,
+    "sort_by": ["score", "desc"]
   }'
 ```
 
@@ -2884,6 +2887,11 @@ curl --request POST \
 $curl = curl_init();
 
 $post_fields = array(
+  "lens_type" => "Worldview",
+  "keywords_include" => "europe",
+  "page" => 0,
+  "limit" => 10,
+  "sort_by" => array("score", "desc")
 );
 
 curl_setopt_array($curl, array(
@@ -2910,10 +2918,166 @@ else {
 }
 ```
 
-> Response body:
+> **Example 2:**<br />Return search results for "europe" keyword, newest first.<br />Response format = drupal_nodes
+
+```shell
+curl --request POST \
+  --url 'https://api.stratfor.com/api/v3/search/param' \
+  --header 'apiKey: YOUR_API_KEY' \
+  --header 'Content-Type: application/json' \
+  --data '{
+    "lens_type": "Worldview",
+    "keywords_include": "europe",
+    "page": 0,
+    "limit": 10,
+    "sort_by": ["created", "desc"],
+    "format": "drupal_nodes"
+  }'
+```
+
+```php
+<?php
+$curl = curl_init();
+
+$post_fields = array(
+  "lens_type" => "Worldview",
+  "keywords_include" => "europe",
+  "page" => 0,
+  "limit" => 10,
+  "sort_by" => array("created", "desc"),
+  "format" => "drupal_nodes"
+);
+
+curl_setopt_array($curl, array(
+  CURLOPT_CUSTOMREQUEST => "POST",
+  CURLOPT_URL => "https://api.stratfor.com/api/v3/search/param",
+  CURLOPT_HTTPHEADER => array(
+    "apiKey: YOUR_API_KEY",
+    "Content-Type: application/json"
+  ),
+  CURLOPT_POSTFIELDS => json_encode($post_fields),
+  CURLOPT_RETURNTRANSFER => true,
+));
+
+$response = curl_exec($curl);
+$err = curl_error($curl);
+
+curl_close($curl);
+
+if ($err) {
+  echo "cURL Error #:" . $err;
+}
+else {
+  echo $response;
+}
+```
+
+> Response body (`format` not specified in request body):
 
 ```json
+{
+  "total_count": 7364,
+  "nodes": [
+    {
+      "id": "hak4nf/taxonomy_term/85",
+      "entity_type": "taxonomy_term",
+      "bundle": "countries",
+      "label": "Luxembourg",
+      "teaser": " Criminal Activity- Low Luxembourg is considered an extremely safe country with a low violent crime rate and little property crime. The main criminal threat in Luxembourg is white-collar crimes that stem from the country&#039;s lax regulatory environment. With Luxembourg&#039;s reputation as a",
+      "ds_created": "2018-07-03T18:07:45Z",
+      "ds_changed": "2018-07-03T18:07:45Z",
+      "score": 1.7226264,
+      "nid": 85
+    },
+    {
+      "id": "hak4nf/node/290099",
+      "entity_type": "node",
+      "bundle": "stratfor_sitrep",
+      "label": "Europe: Mercosur Trade Bloc Offers to Halve Tariffs on EU Vehicles",
+      "teaser": "The Common Market of the South (Mercosur) trade bloc has offered to halve import tariffs on EU cars as part of the ongoing negotiations for a trade agreement between the two blocs, Reuters reported June 26.",
+      "is_uid": 241914,
+      "ds_created": "2018-06-26T16:57:33Z",
+      "ds_changed": "2018-06-26T17:25:00Z",
+      "score": 1.5603344,
+      "nid": 290099
+    },
+    ... another node object here ...
+  ]
+}
+```
 
+> Response body (format = drupal_nodes)
+
+```json
+{
+  "total_count": 7364,
+  "nodes": [
+    {
+      "nid": "290242",
+      "uuid": "bf34f495-948c-4ce2-99a5-3492f2da4b82",
+      "type": "stratfor_sitrep",
+      "title": "EU: Copyright Reform Voted Down",
+      "teaser_body": "The European Parliament voted against a bill on copyright reform that some artists hoped would increase their share of revenue by forcing media-sharing platforms such as Facebook and Google to more closely monitor for copyright infringements, Reuters reported July 5.",
+      "mailout": "",
+      "promo_image": [],
+      "summary": [],
+      "paragraph": [
+        {
+          "bundle": "copy",
+          "description": "<p><strong>What Happened: </strong>The European Parliament voted against a bill on copyright reform that some artists hoped would increase their share of revenue by forcing media-sharing platforms such as Facebook and Google to more closely monitor for copyright infringements, Reuters reported July 5.</p><p><strong>Why It Matters:</strong> EU policies on data privacy and online copyright have often been world&#39;s strongest, but the latest decision from EU lawmakers favors tech giants.</p><p><strong>Background:</strong> The European Union has long been a leader in protecting the rights of consumers and content creators regarding data privacy and copyright infringement, and the region as a whole has frequently adopted an aggressive stance in taking on global tech giants.</p><p><strong>Read More:</strong></p><ul><li><a href=\"https://worldview.stratfor.com/article/bending-internet-how-governments-control-flow-information-online\">Bending the Internet: How Governments Control the Flow of Information Online</a> (June 18, 2018)</li><li><a href=\"https://worldview.stratfor.com/article/what-gdpr-means-companies-europe-and-beyond\">What the GDPR Means for Companies in Europe and Beyond</a> (May 25, 2018)</li><li><a href=\"https://worldview.stratfor.com/article/trade-profile-european-union-tries-reconcile-its-differences\">Trade Profile: The European Union Tries to Reconcile Its Differences</a> (August 14, 2017)&nbsp;</li></ul><p>&nbsp;</p>"
+        }
+      ],
+      "article_type": [],
+      "assessments_type": [],
+      "column_type": [],
+      "media_type": [],
+      "global_perspectives_type": [],
+      "taxonomy": [
+        {
+          "tid": "21",
+          "vid": "5",
+          "v_name": "countries",
+          "name": "Europe",
+          "code": "",
+          "path_alias": "/region/europe"
+        },
+        {
+          "tid": "524",
+          "vid": "33",
+          "v_name": "wv_topics",
+          "name": "Science and Technology",
+          "path_alias": "/topic/science-and-technology"
+        },
+        {
+          "tid": "540",
+          "vid": "33",
+          "v_name": "wv_topics",
+          "name": "Cybersecurity",
+          "path_alias": "/topic/cybersecurity"
+        }
+      ],
+      "sectioned_content_type": [],
+      "forecast_type": [],
+      "overview": "",
+      "youtube_video_url": "",
+      "section": [],
+      "author": [],
+      "www_public_postings_type": [],
+      "source": "",
+      "www_site_page_type": [],
+      "created": "1530806786",
+      "created_formatted": "Jul 5, 2018 | 16:06 GMT",
+      "changed": "1530807947",
+      "changed_formatted": "Jul 5, 2018 | 16:25 GMT",
+      "path_alias": "situation-report/eu-copyright-reform-voted-down",
+      "pdf": "",
+      "status": 1,
+      "score": 0.007999232,
+      "ss_threatlens_content_label": "Situation Report"
+    },
+    ... another node object here ...
+  ]
+}
 ```
 
 Search Worldview contents.
@@ -2926,7 +3090,9 @@ Search Worldview contents.
 
 Parameter | Default | Description
 --- | --- | ---
-lens_type<br />*`string, required`* | | "**lens_type**" parameter must be set to "**worldview**" for Worldview site.
-page<br />*`integer, optional`* | 0 |The page number to start with.<br />0 = First page<br />1 = Second page<Br />and, so on.
+lens_type<br />*`string, required`* | | Type of Stratfor Lens product.<br />**Available options:**<br />Worldview<br />...
+keywords_include<br />*`string, required`* | | Search keyword
+page<br />*`integer, optional`* | 0 | The page number to start with.<br />0 = First page<br />1 = Second page<Br />and, so on.
 limit<br />*`integer, optional`* | 10 | The number of items to return in the response.
-... | ... | ...
+sort_by<br />*`array, optional`* | ["created", "desc"] | Sort the search results.<br />**Available options:**<br />["created", "desc"]<br />["created", "asc"]<br />["score", "desc"]
+format<br />*`string, optional`* | | Description ...<br />**Available options:**<br />drupal_nodes<br />...
