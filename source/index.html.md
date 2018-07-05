@@ -1988,6 +1988,9 @@ sort_by<br />*`array, optional`* | ["created", "DESC"] | Sort the list of conten
 
 @todo
 
+**Note for promo_image field in the response body:**<br />Prepend the value in promo image field with “https://www.stratfor.com/sites/default/files/styles/” to get the complete URL of the promo image.
+
+
 Examples:
 
 1. Get a list of latest 10 worldview contents.
@@ -2107,7 +2110,151 @@ else {
   "paragraph": [
     {
       "bundle": "copy",
-      "description": "<p><strong>By Ambassador Qi Zhenhong for the <a href=\"http://www.internationalaffairs.org.au/australianoutlook/peaceful-coexistence-chinas-goals-and-challenges/\">Australian Institute of International Affairs</a></strong></p><p><em>In an eventful month with the Kim-Trump Summit, what are China&#39;s long-term security goals in the Indo-Pacific region? What are the threats to the US-China trade relationship? And what role can public diplomacy play in times of tension?</em></p><h3>Have US and China Have Managed to Avoid a Trade War?</h3><p>When China and US established diplomatic relations almost 40 years ago, the bilateral trade volume was only USD$ 2.5 billion (AUD$ 3.4 billion), and last year it reached USD$ 580 billion, 232 times more, which suggests that the reciprocal nature of the China-US trade relations has not changed. China-US economic cooperation and trade will continue to ensure that bilateral ties keep moving forward in a steady way.</p><p>As the two major powers in the world, it is natural that China and US have different views on certain issues. The Chinese side believes that China and the US are capable and wise enough to properly manage their differences, which is surely more in line with the interests of the two countries and their peoples, and better for the world at large.</p><p>In dealing with the China-US trade disputes, China has always promoted consultation in an active and pragmatic manner, with the larger picture of China-US relations in mind. The two sides once achieved results and formulated a very clear consultation road map and timetable. The Chinese side believes that the previous consultations are positive and constructive, and serve the interests of both peoples. However, the US side chose to abandon its previous consensus with China and reignite the trade war. Its actions betrayed the trust of everyone, hurt the interests of the people and business communities on the two sides, and worked against the benefits of the people around the world.</p><p>Though a trade war is not something we want, we are definitely not afraid of one. We will continue to take effective measures to firmly safeguard the interests of our nation and our people and resolutely uphold the economic globalisation and the multilateral trading system. No matter what happens outside China, we will continue to move forward our reform and opening-up endeavours, pursue high-quality economic growth and accelerate the building of a modern economic system, following our set pace and always placing the people at the centre of all our efforts.</p><h3>China&#39;s Long-Term Security Goals in the Asia-Pacific</h3><p>China is committed to promoting peace and stability in this region. It follows the path of peaceful development and the mutually beneficial strategy of opening up and it pursues friendly cooperation with all countries on the basis of the Five Principles of Peaceful Coexistence. It has participated in regional cooperation in an all-round way and taken active steps in response to both traditional and non-traditional security challenges, contributing to lasting peace and common prosperity in the Asia-Pacific region.</p><p>China is devoted to the achievement of Common, Comprehensive, Cooperative and Sustainable Security in the Asia-Pacific. Common security means respecting and ensuring the security of each and every country involved. We cannot just have the security of one or some countries while leaving the rest insecure, still less should we seek &quot;absolute security&quot; of oneself at the expense of the security of others. Comprehensive security means upholding security in both traditional and non-traditional fields. Cooperative security means promoting the security of both individual countries and the region as a whole through dialogue and cooperation. Sustainable security means that the countries involved need to focus on both development and security to realise durable security.</p><p>In order to achieve that goal, first, we should promote common development and lay a solid economic foundation for peace and stability in the Asia-Pacific region. To enhance the convergence of economic interests is an important basis for sound state-to-state relations. Common development provides a fundamental safeguard for peace and stability, and holds the key to various security issues.</p><p>Second, we should promote the building of partnerships and strengthen the political foundation for peace and stability in the Asia-Pacific region. All countries should make joint efforts to pursue a new path of dialogue instead of confrontation and pursue partnerships rather than alliances, and build an Asia-Pacific partnership featuring mutual trust, inclusiveness and mutually beneficial cooperation.</p><p>Third, we should improve the existing regional multilateral mechanisms and strengthen the framework for supporting peace and stability in the Asia-Pacific region. All parties concerned should adhere to multilateralism, oppose unilateralism, further support the development of regional multilateral security mechanisms, push for close coordination between relevant mechanisms, and play a bigger role in enhancing mutual understanding and trust, and expanding exchanges and cooperation in the field of security dialogues.</p><p>Fourth, we should promote the rule-setting and improve the institutional safeguards for peace and stability in the Asia-Pacific region. International and regional rules should be discussed, formulated and observed by all countries concerned, rather than being dictated by any particular country.</p><p>Fifth, we should intensify military exchanges and cooperation to offer more guarantees for peace and stability in the Asia-Pacific region.</p><p>Sixth, we should properly resolve differences and disputes, and maintain a sound environment of peace and stability in the Asia-Pacific region. Most of the hotspot and sensitive issues in this region have been left over from history. To handle them, the countries in the region should follow the tradition of mutual respect, seeking common ground while reserving differences, and peaceful coexistence, and work to solve disputes properly and peacefully through direct negotiation and consultation. We should not allow old problems to hamper regional development and cooperation, and undermine mutual trust.</p><h3>China&#39;s Reaction to the Trump-Kim Summit&nbsp;</h3><p>On June 12, the landmark North Korea-US Summit achieved positive results that have been widely welcomed and valued over the world. North Korea and the US have been contradictory or even hostile to each other for more than half a century. The top leaders of the two countries sat down and engaged in equal dialogue, which in itself is of great and positive significance. It created history. China welcomes and supports&nbsp;this, for it&nbsp;is the goal that China&nbsp;has always pursued and worked hard for.</p><p>China has always been firmly committed to the denuclearisation of the Korean Peninsula. At the same time, China&nbsp;believes that in promoting the denuclearisation of the Peninsula, it is necessary to attach importance to and resolve the legitimate security concerns of North Korea. The current process of political settlement of the Peninsula issue is moving in the direction of a &quot;dual-track approach&quot; to promote denuclearisation of the Peninsula and establish a peace regime in parallel&nbsp;proposed by the Chinese side. With the positive progress made in the denuclearisation process, relevant parties should also take active measures in establishing a peace mechanism on the peninsula and resolving the reasonable security concerns of North Korea.</p><p>It can be said that China&#39;s relevant ideas and initiatives as well as the close communication with all the relevant parties&nbsp;have played an active and constructive role in the development of the situation on the peninsula.&nbsp;As a major party&nbsp;and&nbsp;one of the co-signers of the Korean War Armistice Agreement, China&nbsp;has the responsibility and&nbsp;obligation to play its due role in replacing the armistice agreement with a peace mechanism. China will continue to take an active part in the peace process of the Peninsula and make due contributions to achieving the denuclearisation, establishing a peace mechanism and upholding peace and stability on the Peninsula.</p><h3>In Times of Tension, What Can Public Diplomacy Contribute?</h3><p>Funded in 1956, China Institute of International Studies (CIIS) is the first thinktank specialised in foreign policy and international studies in the People&#39;s Republic of China and the only one of its kind attached to the Ministry of Foreign Affairs of China. Since its establishment, CIIS has built extensive exchange network with relevant internationally renowned think tanks and actively promoted Track II diplomacy activities. Public diplomacy activities, especially exchanges between think tanks, are conducive for promoting bilateral and multilateral policy communication and enhancing political mutual trust. When tensions occur, public diplomacy activities are able to lead the public to properly interpret the situation as well as relevant policies to reduce suspicion, eliminate misunderstanding, and increase mutual trust, and thus to remove the obstacles for Track I diplomacy. There are many such dialogue mechanisms between China and Australia, such as the China-Australia Cultural Dialogue, the China-Australia Annual Forum, the China-Australia Media Forum and the China-Australia Hospital Forum.</p><p>CIIS has established sound exchange relations with the Australian Institute of International Affairs and is willing to forge closer cooperation with AIIA to help promote healthy and stable relations between China and Australia.</p><p><em>Ambassador Qi Zhenhong is the President of the Chinese Institute of International Studies. He served as Chinese Ambassador to Bahrain from 2014-2017 and is the former Deputy Director-General of the General Office of the Chinese Ministry of Foreign Affairs.</em></p><p><em>He visited AIIA National Office on 14 June 2018 for a&nbsp;<a href=\"http://www.internationalaffairs.org.au/news-item/roundtable-discussion-with-the-chinese-institute-of-international-studies/\">Roundtable Discussion</a>&nbsp;with a delegation from the China Institute of International Studies which discussed the implications of the US-North Korea summit for China, China&#39;s long term security goals and relationships.</em></p>"
+      "description": "<p><strong>By Ambassador Qi Zhenhong for the Australian Institute of International Affairs</strong></p><p><em>In an eventful month with the Kim-Trump Summit, what are China&#39;s long-term security goals in the Indo-Pacific region? What are the threats to the US-China trade relationship? And what role can public diplomacy play in times of tension?</em></p><h3>Have US and China Have Managed to Avoid a Trade War?</h3><p>When China and US established diplomatic relations almost 40 years ago, the bilateral trade volume was only USD$ 2.5 billion (AUD$ 3.4 billion), and last year it reached USD$ 580 billion, 232 times more, which suggests that the reciprocal nature of the China-US trade relations has not changed. China-US economic cooperation and trade will continue to ensure that bilateral ties keep moving forward in a steady way.</p>..."
+    },
+    {
+      "bundle": "image",
+      "image": {
+        "alt": "This map shows the approximate locations of U.S. Carrier Strike Groups and Amphibious Ready Groups.",
+        "title": "U.S. Naval Update Map: July 5, 2018",
+        "caption": "",
+        "credit": "",
+        "sizes": {
+          "tiny": "https://www.stratfor.com/sites/default/files/styles/wv_tiny/public/naval-update-070518_0.png?itok=2Am4lPZY",
+          "small": "https://www.stratfor.com/sites/default/files/styles/wv_small/public/naval-update-070518_0.png?itok=SvtgP5ci",
+          "medium": "https://www.stratfor.com/sites/default/files/styles/wv_medium/public/naval-update-070518_0.png?itok=MWT4dbv7",
+          "large": "https://www.stratfor.com/sites/default/files/styles/wv_large/public/naval-update-070518_0.png?itok=xltD1Xjg",
+          "full": "https://www.stratfor.com/sites/default/files/naval-update-070518_0.png"
+        }
+      },
+      "image_style": "wide"
+    },
+    {
+      "bundle": "editors_note",
+      "title": "Editor's Note",
+      "note": "<p>One of the best parts about summer is sitting outside and reading a good book. At Stratfor, our analysts can tell you that from experience. If you want to get inside their heads and see how they interpret the world, a great place to start is to check out what they&#39;re reading. For this list, they&#39;ve curated some awesome books that examine or embrace geopolitical concepts in a variety of interesting ways. Though they&#39;re bound to keep you glued to the page, these aren&#39;t your average beach reads!&nbsp;</p><p>Whether you&#39;re spending vacation time poolside with a pina colada in one hand and a book in the other or setting up a staycation in the comfort of your own air-conditioned home (it gets hot here in Texas!), the list below will provide you with enough reading material to keep you engaged and enlightened through the summer months.&nbsp;</p>"
+    },
+    {
+      "bundle": "youtube_video",
+      "url": "https://www.youtube.com/watch?v=-hkqEJNxM4A",
+      "style": "inline"
+    },
+    {
+      "bundle": "interactive",
+      "url": "https://media.stratfor.net/problem-with-airports/",
+      "width": "",
+      "height": ""
+    },
+    {
+      "bundle": "podcast",
+      "url": "https://player.backtracks.fm/stratfor/stratfor-podcast/m/spy-master-with-author-brad-thor"
+    },
+    {
+      "bundle": "pull_quote",
+      "quote": "Companies have a legal \"duty of care\" responsibility to warn employees about potential threats. "
+    },
+    {
+      "bundle": "forecast_update",
+      "title": "The Big Picture",
+      "forecast": "<p>As the world stands on the threshold of a new era in energy, Stratfor is tracking the mining and development of metals that are critical to the batteries that power high-tech products. In so doing, we are examining the strategies that the great economic powers are using to secure the energy-storage supply chains that will be crucial for electric vehicles over the next 15 years.</p>",
+      "sectioned_content": [
+        {
+          "nid": "286201",
+          "type": "sectioned_content",
+          "title": "2018 Annual Forecast",
+          "promo_image": {
+            "uri": "public://forecast-2018-v2.jpg",
+            "alt": "Though the threat of war on the Korean Peninsula can't be ruled out, the United States will probably try to avoid a costly preventive strike against the North's nuclear weapons program that would plunge the global economy back into recession.",
+            "title": "Deepening collaboration between China and Russia will pose a strategic threat to the United States, spurring Washington to try to check the budding partnership by reinforcing its own allies in the Eurasian borderlands.",
+            "caption": "<p>As the specter of war looms in the Asia-Pacific, global alliances will form and transform, and the United States will crack down even harder on Iran -- as well as its own trade partners.</p>",
+            "credit": "(FAYEZ NURELDINE/LINTAO ZHANG/SEAN GALLUP/ALEXEY NIKOLSKY/SERTS/PINGEBAT/MHNEWMEDIA/IIAP/AFP/iStock/Getty Images)",
+            "sizes": {
+              "16x9": {
+                "tiny": "16x9_tiny/public/forecast-2018-v2.jpg?itok=7TZYJkB5",
+                "small": "16x9_small/public/forecast-2018-v2.jpg?itok=scY3rj7I",
+                "medium": "16x9_medium/public/forecast-2018-v2.jpg?itok=D3TcHWmB",
+                "large": "16x9_large/public/forecast-2018-v2.jpg?itok=1oyyGttP",
+                "full": "16x9_full/public/forecast-2018-v2.jpg?itok=YgSW8J5a"
+              },
+              "square": {
+                "tiny": "square_tiny/public/forecast-2018-v2.jpg?itok=7xhwY6Hn",
+                "small": "square_small/public/forecast-2018-v2.jpg?itok=beP77f5_",
+                "medium": "square_medium/public/forecast-2018-v2.jpg?itok=7ZQSzWPM",
+                "large": "square_large/public/forecast-2018-v2.jpg?itok=Kna3Pfc8",
+                "full": "square_full/public/forecast-2018-v2.jpg?itok=-ZbfHepf"
+              },
+              "article": {
+                "tiny": "article_tiny/public/forecast-2018-v2.jpg?itok=hZgwM1SL",
+                "small": "article_small/public/forecast-2018-v2.jpg?itok=UAcCSmyX",
+                "medium": "article_medium/public/forecast-2018-v2.jpg?itok=uMkTDKxR",
+                "large": "article_large/public/forecast-2018-v2.jpg?itok=ACKvd2HG",
+                "full": "article_full/public/forecast-2018-v2.jpg?itok=EfNCXzBk"
+              },
+              "2x1": {
+                "tiny": "2x1_tiny/public/forecast-2018-v2.jpg?itok=toum37yC",
+                "small": "2x1_small/public/forecast-2018-v2.jpg?itok=qLgZw1x6",
+                "medium": "2x1_medium/public/forecast-2018-v2.jpg?itok=JyaTtsMT",
+                "large": "2x1_large/public/forecast-2018-v2.jpg?itok=mJ0FGD2K",
+                "full": "2x1_full/public/forecast-2018-v2.jpg?itok=5hk7T8EM"
+              },
+              "metatag": "https://www.stratfor.com/sites/default/files/styles/16x9_small/public/forecast-2018-v2.jpg?itok=scY3rj7I"
+            }
+          },
+          "teaser_body": "North Korea's likely achievement of a viable nuclear deterrent next year will give rise to a new and more unstable era of containment. As the specter of war looms in the Asia-Pacific, China and Russia will band together while the United States cracks down even harder on Iran -- as well as its own trade partners.",
+          "mailout": "North Korea's likely achievement of a viable nuclear deterrent next year will give rise to a new and more unstable era of containment. As the specter of war looms in the Asia-Pacific, China and Russia will band together while the United States cracks down even harder on Iran -- as well as its own trade partners.",
+          "overview": "<p><strong>Reckoning With North Korea: </strong>Though the threat of war on the Korean Peninsula can&#39;t be ruled out, the United States will probably try to avoid a costly preventive strike against the North&#39;s nuclear weapons program that would plunge the global economy back into recession. Instead, Pyongyang&#39;s demonstration of a viable nuclear deterrent next year will spawn a new and more unstable era of containment.</p><p><strong>Hedging All Around:</strong> Deepening collaboration between China and Russia will pose a strategic threat to the United States, spurring Washington to try to check the budding partnership by reinforcing its own allies in the Eurasian borderlands. The fluidity of alignments among great powers will increasingly define the international system as Moscow and Beijing balance against each other, just as many U.S. allies hedge their relationships with Washington.</p><p><strong>Putting Trade Ties to the Test:</strong> The White House will forge ahead with an aggressive trade agenda that targets China, Mexico, South Korea and Japan. While the U.S. trade agreement with South Korea hangs by a thread, congressional and legal checks on U.S. executive power will have a better chance of keeping the North American Free Trade Agreement intact. The United States&#39; increasing unilateralism in trade will expose the weaknesses of the World Trade Organization, but it won&#39;t shatter the bloc or trigger a trade war.</p><p><strong>Revisiting Iran:</strong> North Korea&#39;s nuclear weapons achievements will fuel a hard-line U.S. policy toward Iran, jeopardizing the Joint Comprehensive Plan of Action. As the United States, Saudi Arabia and Israel close ranks against Iran, proxy battles across the Middle East will intensify. But Iran won&#39;t walk away from its nuclear deal with the West. Russia will nevertheless exploit the tension mounting between Washington and Tehran, as well as its advantage on the Syrian battlefield, to expand its influence in the Middle East at the United States&#39; expense.</p><p><strong>Managing an Oil Exit Strategy:</strong> Major oil producers hope to stay on track to rebalance the global oil market in 2018. As the expiration of their pact to limit production and draw down inventories approaches, compliance will slip among OPEC and non-OPEC participants alike. Even so, Saudi Arabia and Russia may be able to work together to counteract an expected uptick in U.S. shale output.</p><p><strong>The Next Phase of China&#39;s Reform: </strong>Chinese President Xi Jinping will take on entrenched local interests as the central government tackles the next phase of its reform agenda: wealth redistribution. A slowing property sector and corporate debt maturities will compound financial pressures on China&#39;s northeastern rust belt in 2018, but Beijing has the tools it needs to prevent a systemic debt crisis.</p><p><strong>France Finds Its Voice: </strong>France will find itself on more equal footing with Germany next year as it defends Southern European interests and debates eurozone reform. The possibility of a more Euroskeptic government emerging in Italy will send jitters through financial markets, but the country won&#39;t leave the currency zone.</p><p><strong>Populism Persists in Latin America:</strong> Popular frustration with the political establishment will make for a more competitive election season in three of Latin America&#39;s biggest economies: Mexico, Brazil and Colombia. Should a populist president take office in Mexico, Congress will block him from enacting any sweeping policy changes. Meanwhile, Brazil and Argentina will have a narrow window in which to implement domestic reforms and push ahead with trade talks in the Common Market of the South before political constraints start piling up against them.</p><p>&nbsp;</p><center><iframe allow=\"encrypted-media\" allowfullscreen=\"\" frameborder=\"0\" gesture=\"media\" height=\"315\" src=\"https://www.youtube.com/embed/64CeV3vWxkU\" width=\"560\"></iframe></center><p>&nbsp;</p>",
+          "youtube_video_url": "",
+          "created": "1514289439",
+          "created_formatted": "Dec 26, 2017 | 11:57 GMT",
+          "changed": "1527098352",
+          "changed_formatted": "May 23, 2018 | 17:59 GMT",
+          "path_alias": "article/2018-annual-forecast",
+          "article_type": [],
+          "assessments_type": [],
+          "column_type": [],
+          "media_type": [],
+          "global_perspectives_type": [],
+          "sectioned_content_type": {
+            "tid": "513",
+            "vid": "32",
+            "name": "Forecasts"
+          },
+          "forecast_type": {
+            "tid": "268",
+            "vid": "10",
+            "name": "Annual"
+          },
+          "www_public_postings_type": [],
+          "source": "",
+          "www_site_page_type": [],
+          "taxonomy": [],
+          "author": [],
+          "pdf": "",
+          "status": 1
+        }
+      ],
+      "section": [
+        {
+          "nid": "286213",
+          "type": "section",
+          "title": "Asia-Pacific",
+          "created": "1513890569",
+          "created_formatted": "Dec 21, 2017 | 21:09 GMT",
+          "path_alias": "article/2018-annual-forecast/asia-pacific",
+          "status": 1,
+          "parent": {
+            "nid": "286201",
+            "type": "sectioned_content",
+            "title": "2018 Annual Forecast",
+            "created": "1514289439",
+            "created_formatted": "Dec 26, 2017 | 11:57 GMT",
+            "path_alias": "article/2018-annual-forecast",
+            "status": 1
+          }
+        }
+      ],
+      "themes": [],
+      "topics": []
     }
   ],
   "article_type": {
@@ -2177,6 +2324,206 @@ else {
 }
 ```
 
+> Response body (Forecasts content):
+
+```json
+{
+  "nid": "287694",
+  "type": "sectioned_content",
+  "title": "2018 Second-Quarter Forecast",
+  "teaser_body": "All eyes will be fixed on the White House this quarter as it launches a trade offensive whose collateral damage will span the globe. As economic and political pressure mounts against China, North Korea will use a temporary detente with the South to undermine the United States' containment strategy against it.",
+  "promo_image": {
+    "uri": "public://Display-Forecast-Feb2018 v2.jpg",
+    "alt": "The White House will bump up against the laws of the United States and the central tenets of the World Trade Organization as it launches a global trade offensive in the name of national security. ",
+    "title": "Building on a brief detente, South Korea will try to persuade the United States and North Korea to reconcile their mostly intractable positions on the issue of denuclearization. ",
+    "caption": "<p>As economic and political pressure mounts against China this quarter, North Korea will use a temporary detente with the South to undermine the United States&#39; containment strategy against it.</p>",
+    "credit": "(GOH CHAI HIN/MLADEN ANTONOV/SAUL LOEB/JOE RAEDLE/TOM MIHALEK/FENG LI/TAB1962/DONVICTORIO/KEVIND/STR/AFP/Getty Images) ",
+    "sizes": {
+      "16x9": {
+        "tiny": "16x9_tiny/public/Display-Forecast-Feb2018%20v2.jpg?itok=MmKIP7rl",
+        "small": "16x9_small/public/Display-Forecast-Feb2018%20v2.jpg?itok=TNqdhIT5",
+        "medium": "16x9_medium/public/Display-Forecast-Feb2018%20v2.jpg?itok=P8M02bmA",
+        "large": "16x9_large/public/Display-Forecast-Feb2018%20v2.jpg?itok=FCC0if8s",
+        "full": "16x9_full/public/Display-Forecast-Feb2018%20v2.jpg?itok=JqYNxmCl"
+      },
+      "square": {
+        "tiny": "square_tiny/public/Display-Forecast-Feb2018%20v2.jpg?itok=d8zotArs",
+        "small": "square_small/public/Display-Forecast-Feb2018%20v2.jpg?itok=5MxJiDCR",
+        "medium": "square_medium/public/Display-Forecast-Feb2018%20v2.jpg?itok=iYn-8f-r",
+        "large": "square_large/public/Display-Forecast-Feb2018%20v2.jpg?itok=6yO4H96a",
+        "full": "square_full/public/Display-Forecast-Feb2018%20v2.jpg?itok=vmptL1hE"
+      },
+      "article": {
+        "tiny": "article_tiny/public/Display-Forecast-Feb2018%20v2.jpg?itok=M2f5Ws8j",
+        "small": "article_small/public/Display-Forecast-Feb2018%20v2.jpg?itok=4z8Give9",
+        "medium": "article_medium/public/Display-Forecast-Feb2018%20v2.jpg?itok=KcTss0N9",
+        "large": "article_large/public/Display-Forecast-Feb2018%20v2.jpg?itok=Oyt0A1BH",
+        "full": "article_full/public/Display-Forecast-Feb2018%20v2.jpg?itok=QjPq4X-W"
+      },
+      "2x1": {
+        "tiny": "2x1_tiny/public/Display-Forecast-Feb2018%20v2.jpg?itok=ZBSXkAnV",
+        "small": "2x1_small/public/Display-Forecast-Feb2018%20v2.jpg?itok=TtQOj9G_",
+        "medium": "2x1_medium/public/Display-Forecast-Feb2018%20v2.jpg?itok=SWMzngnG",
+        "large": "2x1_large/public/Display-Forecast-Feb2018%20v2.jpg?itok=qn9QHFFs",
+        "full": "2x1_full/public/Display-Forecast-Feb2018%20v2.jpg?itok=1wG5Ezd0"
+      },
+      "metatag": "https://www.stratfor.com/sites/default/files/styles/16x9_small/public/Display-Forecast-Feb2018%20v2.jpg?itok=TNqdhIT5"
+    }
+  },
+  "sectioned_content_type": {
+    "tid": "513",
+    "vid": "32",
+    "name": "Forecasts"
+  },
+  "forecast_type": {
+    "tid": "270",
+    "vid": "10",
+    "name": "Quarterly"
+  },
+  "overview": "<p>&nbsp;</p><p><strong>The White House Takes on the World:</strong> The White House will bump up against the laws of the United States and the central tenets of the World Trade Organization as it launches a global trade offensive in the name of national security. U.S. production costs will rise in response, and countries will target America&#39;s politically sensitive sectors in retaliation.</p><p><strong>Trade, Technology and Taiwan:</strong> Tension between the United States and China will spike, putting businesses caught in the fray at risk. While the White House targets Chinese trade and investment with its protectionist policies, Congress will rouse Beijing&#39;s ire by upgrading U.S. ties with Taiwan.</p><p><strong>A Race to the Cutting Edge:</strong> As the United States turns its attention toward its competition with China and Russia, the development of disruptive weapons technology among the great powers will further degrade the world&#39;s arms control treaties. Beijing will funnel state funds toward artificial intelligence research in hopes of catching up with its American adversary while the West struggles to navigate antitrust and data privacy concerns.</p><p><strong>The Stubborn Problem of Nuclear Proliferation:</strong> Building on a brief detente, South Korea will try to persuade the United States and North Korea to reconcile their mostly intractable positions on the issue of denuclearization. Meanwhile, Iran will rely on Europe&#39;s support to keep its nuclear deal alive as Saudi Arabia uses the same agreement to negotiate a civilian nuclear program of its own.</p><p>&nbsp;</p><center><iframe allow=\"encrypted-media\" allowfullscreen=\"\" frameborder=\"0\" gesture=\"media\" height=\"315\" src=\"https://www.youtube.com/embed/MyT1D73pHrM\" width=\"560\"></iframe></center><p>&nbsp;</p><p><strong>Fighting for the Future of Europe:</strong> Headed by a divided Germany and an emboldened France, the debate over eurozone reforms will expose the deeper divides threatening Continental unity as Italy stands ready to flout any rules-based regime that Berlin and its northern allies propose.</p><p><strong>Balancing Oil and Building Batteries: </strong>Global oil producers, led by Saudi Arabia and Russia, will extend and adjust their agreed-upon production cuts to counter U.S. shale output over the long run. In the alternative energies sector, battery developers will have to contend with the Democratic Republic of the Congo&#39;s attempt to rake in more revenue as the world&#39;s demand for cobalt grows.</p><p><strong>Trouble Brews in the Americas: </strong>Mexico will let Canada take the lead in confronting the United States on trade issues during NAFTA negotiations. Trade tension will likewise mar Washington&#39;s rocky relationship with Brazil as the two remain at odds over how to manage Venezuela&#39;s economic crisis and its regional spillover.</p><p><strong>India Protects Its Periphery:</strong> China&#39;s deep pockets and wide maritime reach will draw India into closer defense cooperation with the United States, Japan and Australia as it works to balance against its increasingly powerful neighbor.</p><p><strong>Ankara&#39;s Ambitions Take Center Stage:</strong> A rising power in its own right, Turkey will push its troops deeper into northern Syria and Iraq while laying claim to the eastern Mediterranean Sea, upsetting Cyprus&#39; plans for the energy resources that lie beneath the disputed waters.</p>",
+  "youtube_video_url": "https://www.youtube.com/watch?v=MyT1D73pHrM",
+  "section": [
+    {
+      "nid": "287824",
+      "type": "section",
+      "section_type": "custom",
+      "countries": [],
+      "topics": [],
+      "themes": [],
+      "title": "Global Trends",
+      "description": "In today's world, nations are becoming increasingly interconnected by air, land, sea and cyberspace. As globalization has knitted countries and continents closer together, the borders of the map and the barriers of geography have been rendered, in some ways, obsolete. Now events in one region can more easily have consequences in another, at times even rippling across the globe. We explore those with the greatest impact on international decision-making during the forecast period below.",
+      "image": {
+        "uri": "public://nasa-global-overview-trends_3.jpg",
+        "alt": "The White House's trade policy will fuel market volatility in the second quarter.",
+        "title": "The White House is ready to take aim at the global economy this quarter, and the bull's-eye is sitting squarely on Beijing. ",
+        "caption": "<p>As U.S. President Donald Trump&#39;s 2018 trade agenda put it, &quot;these are exciting times for U.S. trade policy.&quot; That may be the understatement of the year.</p>",
+        "credit": "(NASA/Newsmakers)",
+        "sizes": {
+          "16x9": {
+            "tiny": "16x9_tiny/public/nasa-global-overview-trends_3.jpg?itok=7E9Rwpoo",
+            "small": "16x9_small/public/nasa-global-overview-trends_3.jpg?itok=bAkTZJAc",
+            "medium": "16x9_medium/public/nasa-global-overview-trends_3.jpg?itok=jkJc74Ji",
+            "large": "16x9_large/public/nasa-global-overview-trends_3.jpg?itok=V2H336I2",
+            "full": "16x9_full/public/nasa-global-overview-trends_3.jpg?itok=wF8e5icb"
+          },
+          "square": {
+            "tiny": "square_tiny/public/nasa-global-overview-trends_3.jpg?itok=NJP2tQqz",
+            "small": "square_small/public/nasa-global-overview-trends_3.jpg?itok=C1ey7K-F",
+            "medium": "square_medium/public/nasa-global-overview-trends_3.jpg?itok=n2l6uW3K",
+            "large": "square_large/public/nasa-global-overview-trends_3.jpg?itok=ypJq9rAM",
+            "full": "square_full/public/nasa-global-overview-trends_3.jpg?itok=N5fKOylz"
+          },
+          "article": {
+            "tiny": "article_tiny/public/nasa-global-overview-trends_3.jpg?itok=t8_PoSFK",
+            "small": "article_small/public/nasa-global-overview-trends_3.jpg?itok=x-FmfQbz",
+            "medium": "article_medium/public/nasa-global-overview-trends_3.jpg?itok=nQLTQZKl",
+            "large": "article_large/public/nasa-global-overview-trends_3.jpg?itok=gcp-34sh",
+            "full": "article_full/public/nasa-global-overview-trends_3.jpg?itok=ziLvF13t"
+          },
+          "2x1": {
+            "tiny": "2x1_tiny/public/nasa-global-overview-trends_3.jpg?itok=1w36x4zN",
+            "small": "2x1_small/public/nasa-global-overview-trends_3.jpg?itok=vslfGicJ",
+            "medium": "2x1_medium/public/nasa-global-overview-trends_3.jpg?itok=XLzOUlks",
+            "large": "2x1_large/public/nasa-global-overview-trends_3.jpg?itok=xeuIYtIK",
+            "full": "2x1_full/public/nasa-global-overview-trends_3.jpg?itok=pV3x7_R-"
+          },
+          "metatag": "https://www.stratfor.com/sites/default/files/styles/16x9_small/public/nasa-global-overview-trends_3.jpg?itok=bAkTZJAc"
+        }
+      },
+      "highlights": "<ul><li><em>The White House&#39;s economic assault against China will cause collateral damage around the globe, but on their own, tariffs will likely do little to solve the United States&#39; perceived trade deficit problem.</em></li><li><em>As concerns about data privacy and corporate monopolies give rise to new regulations in the West, China will pump its resources into the development of strategic technologies to try to catch up with the United States.</em></li><li><em>Cryptocurrency regulations will proceed apace while more and more countries experiment with the perks of state-backed cryptocurrencies, including insulation from sanctions and diversification away from the dollar.</em></li><li><em>United in their goal of countering the rise of U.S. shale, global producers led by Saudi Arabia and Russia will extend their production cuts and work toward a more enduring cooperation deal.</em></li></ul>",
+      "subsection": [
+        {
+          "section_type": "custom",
+          "countries": [],
+          "topics": [],
+          "themes": [],
+          "title": "The Bull in the China Shop",
+          "description": "",
+          "image": [],
+          "paragraph": [
+            {
+              "bundle": "copy",
+              "description": "<p>As U.S. President Donald Trump&#39;s 2018 trade agenda put it, &quot;these are exciting times for U.S. trade policy.&quot; That may be the understatement of the year. The White House is ready to take aim at the global economy this quarter, and the bull&#39;s-eye is sitting squarely on Beijing.</p><p>Trump is convinced that China&#39;s economic rise poses a national security threat. And when it comes to China&#39;s penchant for dumping goods, enacting unfair subsidy regimes, distorting the market and violating intellectual property rights, many countries in the developed world would agree. The United States, however, isn&#39;t willing to wait around for the European Union and Japan to address these challenges in a managed, multilateral forum. Instead it will follow an &quot;act now, talk later&quot; strategy that it believes &mdash; rightly or wrongly &mdash; will coerce Beijing into coming to the negotiating table on Washington&#39;s terms. The United States also hopes its tactics will galvanize free-trade advocates to reform institutions like the World Trade Organization (WTO) so that they, too, can bring China in line with international trade and investment norms. That&#39;s the idea, anyway.</p><p>But just as the United States claims that China benefits from <a class=\"connectedContentTrigger\" href=\"/themes/globalization-evolved\" data-tid=\"620\" type=\"Themes\" title=\"Globalization, Evolved\">a rules-based global trade order</a> by refusing to play by those rules, the White House is bending many of them to make its point. For instance, <a class=\"connectedContentTrigger\" href=\"/article/trumps-trade-challenges-revisited-steel-aluminum-tariffs\" data-nid=\"287686\" type=\"Guidance\" title=\"Trump's Trade Challenges, Revisited\" data-timestamp=\"1519948949\">the sweeping tariffs on steel and aluminum</a>&nbsp;that Washington will use to combat overcapacity in the name of national security will produce a litany of legal challenges within the United States and at the WTO, as affected countries &mdash; including members of the European Union, China, Brazil, Japan and South Korea &mdash; protest the measures. In fact, many will retaliate with anti-dumping and countervailing duties of their own against the United States, taking care to target politically sensitive sectors like agriculture ahead of midterm elections in November. These reprisals may even take on an anti-American tone: The European Union has already threatened to crack down on iconic American imports, including Harley Davidson motorcycles, bourbon and blue jeans.</p>"
+            },
+            {
+              "bundle": "image",
+              "image": {
+                "alt": "U.S. Steel Imports",
+                "title": "U.S. Steel Imports",
+                "caption": "",
+                "credit": "",
+                "sizes": {
+                  "tiny": "https://www.stratfor.com/sites/default/files/styles/wv_tiny/public/china-us-steel-imports-030118_0.png?itok=hdGcp_DJ",
+                  "small": "https://www.stratfor.com/sites/default/files/styles/wv_small/public/china-us-steel-imports-030118_0.png?itok=e_wNep_V",
+                  "medium": "https://www.stratfor.com/sites/default/files/styles/wv_medium/public/china-us-steel-imports-030118_0.png?itok=KyuzgFHY",
+                  "large": "https://www.stratfor.com/sites/default/files/styles/wv_large/public/china-us-steel-imports-030118_0.png?itok=DhObcc1T",
+                  "full": "https://www.stratfor.com/sites/default/files/china-us-steel-imports-030118_0.png"
+                }
+              },
+              "image_style": "inline"
+            },
+            {
+              "bundle": "copy",
+              "description": "<p>By using creative arguments to wield the most powerful trade weapons in its arsenal, the United States will&nbsp;<a class=\"connectedContentTrigger\" href=\"/article/why-united-states-wary-wto\" data-nid=\"286044\" type=\"Reflections\" title=\"Why the United States Is Wary of the WTO\" data-timestamp=\"1513288571\">back the WTO into a corner.</a>&nbsp;Legal challenges in the organization take years to play out, but if the arbitration ends in Washington&#39;s favor, it will endorse a dangerous precedent of invoking national security to justify economic protectionism. Should the WTO rule against the United States, the White House could opt to ignore the decision altogether by citing American sovereignty, undermining the institution&#39;s credibility in the process. (Notably, the White House will also&nbsp;<a class=\"connectedContentTrigger\" href=\"/article/trumps-disruptive-approach-trade\" data-nid=\"275465\" type=\"Reflections\" title=\"Trump's Disruptive Approach to Trade\" data-timestamp=\"1488416919\">continue to paralyze the WTO&#39;s arbitration system</a>&nbsp;by blocking new appointments to the appellate body.)</p><p>In the meantime, steel and aluminum consumers in the United States will have to bear higher input costs. Contrary to Trump&#39;s logic that higher tariffs will reduce trade deficits, they aren&#39;t guaranteed to make Chinese steel less competitive in the United States. Metals exporters subject to U.S. tariffs will divert their goods to other markets around the world, which in turn will cause big metals importers to throw up barriers to protect their markets from a flood of foreign products. Amid the ensuing trade scramble, <a class=\"connectedContentTrigger\" href=\"/themes/us-and-balance-power\" data-tid=\"572\" type=\"Themes\" title=\"The U.S. and the Balance of Power\">the United States</a> hopes to persuade the European Union and Japan to join its crusade to counter excess global steel capacity. But Washington&#39;s partners may instead choose to stand up to its blatant protectionism and push back against the United States under the auspices of the WTO.</p><p>The United States&#39; opening trade move may be to target overcapacity, but intellectual property will be high on its list of concerns as well. Under a Section 301 investigation into whether China&#39;s technology transfer and investment requirements of American firms operating inside its borders are discriminatory, Washington will take action against Beijing &mdash; both within and beyond the bounds of the WTO. (The investigation must wrap up by August, but Washington may release its findings before then.) The United States is already entertaining some legally questionable moves, such as&nbsp;<a class=\"connectedContentTrigger\" href=\"/article/who-would-lose-more-us-china-war-reciprocity\" data-nid=\"286736\" type=\"Assessments\" title=\"Who Would Lose More in a U.S.-China War of Reciprocity?\" data-timestamp=\"1516235334\">declaring a national emergency</a>&nbsp;in response to China&#39;s intellectual property violations, to impose punitive measures and erect safeguards around certain U.S. industries like consumer electronics, household appliances and automotives. Along with Europe, it will also continue to block Chinese investments in the tech sector as it sees fit, pointing to national security as its motive.</p>"
+            },
+            {
+              "bundle": "image",
+              "image": {
+                "alt": "China's Foreign Direct Investment Worldwide",
+                "title": "China's Foreign Direct Investment Worldwide",
+                "caption": "",
+                "credit": "",
+                "sizes": {
+                  "tiny": "https://www.stratfor.com/sites/default/files/styles/wv_tiny/public/china-investment-worldwide-percent-020218.png?itok=McXZeby4",
+                  "small": "https://www.stratfor.com/sites/default/files/styles/wv_small/public/china-investment-worldwide-percent-020218.png?itok=6vYdrb8d",
+                  "medium": "https://www.stratfor.com/sites/default/files/styles/wv_medium/public/china-investment-worldwide-percent-020218.png?itok=_MsGsJyp",
+                  "large": "https://www.stratfor.com/sites/default/files/styles/wv_large/public/china-investment-worldwide-percent-020218.png?itok=bn-eAXej",
+                  "full": "https://www.stratfor.com/sites/default/files/china-investment-worldwide-percent-020218.png"
+                }
+              },
+              "image_style": "inline"
+            },
+            {
+              "bundle": "copy",
+              "description": "<p>China, of course, won&#39;t take Trump&#39;s trade jabs lying down. In addition to imposing its own restrictions on some U.S. agricultural goods, Beijing is likely to selectively apply regulatory pressure on American companies with stakes in China. And when the time comes for Beijing to negotiate with Washington, it will have a handful of concessions &mdash; expanding U.S. access to the Chinese market and boosting Chinese imports of U.S. goods in certain sectors, to name a few &mdash; to offer. The external pressure mounting against China&#39;s economy may even accelerate the country&#39;s ongoing attempts to tackle overcapacity at home.</p><p>Though the White House may be willing to stomach the political risk attached to tariffs that ratchet up metals prices for U.S. industrial consumers, it will show more caution as it navigates North American trade negotiations. The ongoing NAFTA talks will stretch beyond this quarter, thanks to major sticking points on rules of origin requirements for the auto sector and to Canada&#39;s more assertive stance against the United States. So far, domestic political checks on Trump&#39;s actions have dissuaded the president from abruptly withdrawing from the pact. As he leans on more aggressive trade measures in the months ahead, overruling defenders of free trade within his administration, Congress will take on a more assertive role in regulating the country&#39;s commerce abroad. Though U.S. lawmakers will have greater room to insulate existing free trade agreements, including NAFTA, their ability to counter unilateral tariffs leveled by the executive branch will be limited.</p><p>The White House&#39;s trade policy will be one of several factors&nbsp;<a class=\"connectedContentTrigger\" href=\"/article/after-decade-calm-bigger-waves-may-batter-markets\" data-nid=\"287187\" type=\"Reflections\" title=\"After a Decade of Calm, Bigger Waves May Batter the Markets\" data-timestamp=\"1517964479\">fueling market volatility</a>&nbsp;in the second quarter. Any uptick in expectations of inflation could lead to four hikes in U.S. interest rates this year instead of three. While by no means certain, this outcome would cause overvalued asset prices in U.S. equity markets to deflate. Higher interest rates could also strengthen the dollar and put more pressure on the central banks of the eurozone, Japan and China to tighten their monetary policies as they guard against the outflow of capital &mdash; with consequences for economic growth that could ripple across the globe.</p>"
+            }
+          ]
+        },
+        {
+          "section_type": "custom",
+          "countries": [],
+          "topics": [],
+          "themes": [],
+          "title": "Reining in Rogues and Rivals",
+          "description": "",
+          "image": [],
+          "paragraph": [
+            {
+              "bundle": "copy",
+              "description": "<p>The president&#39;s approach to trade offers yet another example of his willingness to override the concerns of national security professionals within his administration on certain issues. Many have called for a more measured and targeted approach to avoid entrapping strategic U.S. allies and increasing the costs of U.S. defense. Still, as long as these voices remain in the White House, they will continue to restrain Trump&#39;s responses to thornier foreign policy matters.</p><p>Among them will be nuclear containment. Despite worsening military friction between the United States and North Korea this quarter, a U.S. strike on the Korean Peninsula will remain an unlikely prospect &mdash; particularly given the promised summit between Trump and North Korean leader Kim Jong Un. Meanwhile, even as the United States urges Europe to threaten Iran with sanctions related to its ballistic missile program, Washington will stop short of tearing up Tehran&#39;s nuclear deal altogether. But new nuclear proliferation concerns are emerging in the Middle East. Having already secured Russia&#39;s stamp of approval for a preliminary roadmap, Saudi Arabia will use the Joint Comprehensive Plan of Action between Iran and global powers as a framework for a deal on a civilian nuclear program in the kingdom that includes domestic enrichment rights. Though it won&#39;t be thrilled with the idea, the United States will work to ensure that it &mdash; rather than a rival like Russia &mdash; is best positioned to partner with allies in the Arab world that seek civilian nuclear programs of their own.</p><p>As it fends off <a class=\"connectedContentTrigger\" href=\"/themes/rebalancing-power-middle-east\" data-tid=\"616\" type=\"Themes\" title=\"Rebalancing Power in the Middle East\">Moscow&#39;s encroachment in the Middle East</a>, Washington will prepare for a more fundamental competition with Russia and China. At the beginning of the year, a series of U.S. defense reviews all but confirmed this by dubbing the two eastern giants the main strategic threats to the United States today. As <a class=\"connectedContentTrigger\" href=\"/article/arms-race-toward-global-instability\" data-nid=\"287464\" type=\"On Geopolitics\" title=\"An Arms Race Toward Global Instability\" data-timestamp=\"1519146012\">the great power competition</a>&nbsp;takes shape, countries caught in the middle will have no choice but to adapt. Some, like Ukraine and Taiwan, will use the contest to fortify their alliances with the United States. Others, like the Philippines, will find it increasingly difficult to balance their relationships with both sides.</p><p>Spurred by their rivalry, the United States, China and Russia will continue to develop disruptive weapons technology. But rather than force all parties into compliance with existing arms treaties, this dangerous race is more likely to <a class=\"connectedContentTrigger\" href=\"/article/changing-rulebook-tame-new-global-arms-race\" data-nid=\"278333\" type=\"On Geopolitics\" title=\"A Changing Rulebook to Tame the New Global Arms Race\" data-timestamp=\"1490688012\">further degrade the deals</a>&nbsp;as time goes on. Accusations of violations will continue to fly between the United States and Russia as the pivotal Intermediate-Range Nuclear Forces Treaty steadily falls apart, undermining talks on the extension of the New Strategic Arms Reduction Treaty in the process.</p>"
+            }
+          ]
+        },
+        ... another subsection here ...
+      ],
+      "created": "1520534033",
+      "created_formatted": "Mar 8, 2018 | 18:33 GMT",
+      "changed": "1528399858",
+      "changed_formatted": "Jun 7, 2018 | 19:30 GMT",
+      "path_alias": "article/2018-second-quarter-forecast/global-trends",
+      "status": 1,
+    },
+    .. another section here ...
+  ],
+  "created": "1520806295",
+  "created_formatted": "Mar 11, 2018 | 22:11 GMT",
+  "changed": "1528399858",
+  "changed_formatted": "Jun 7, 2018 | 19:30 GMT",
+  "path_alias": "article/2018-second-quarter-forecast",
+  "status": 1
+}
+```
+
 This endpoint retrieves a full content details.
 
 ### HTTP Request
@@ -2211,6 +2558,28 @@ double encoded path alias = article%252Ftest-test
 Parameter | Type | Default | Required | Description
 --- | --- | --- | --- | ---
 site | string | worldview | Yes | "**site**" parameter must be set to "**worldview**" for Worldview site.
+
+The **paragraph** field in the response body contains multiple paragraph bundles (also called as "content blocks").
+
+Available paragraph bundles (or, content blocks):
+<ul>
+  <li>copy</li>
+  <li>image</li>
+  <li>pull_quote</li>
+  <li>youtube_video</li>
+  <li>interactive</li>
+  <li>editors_note</li>
+  <li>podcast</li>
+  <li>forecast_update</li>
+</ul>
+
+<br />
+
+The response format of **Forecasts** content is different than Article contents.
+<br />
+This is the response format of Forecasts contents:
+
+<img src="images/worldview-full-content-response-forecasts.png" />
 
 # Taxonomy API
 
