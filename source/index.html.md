@@ -275,7 +275,7 @@ This endpoint lists all Threat Lens contents.
 Parameter | Default | Description
 --- | --- | ---
 lens_type<br />*`string, required`* | | Type of Stratfor Lens product.<br />**Available options:**<br />Threat<br />...
-page<br />*`integer, optional`* | 0 |The page number to start with.<br />0 = First page<br />1 = Second page<Br />and, so on.
+page<br />*`integer, optional`* | 0 | The page number to start with.<br />0 = First page<br />1 = Second page<Br />and, so on.
 limit<br />*`integer, optional`* | 10 | The number of items to return in the response.
 type<br />*`array, optional`* | | Lens content types.<br />**Available Threat Lens content types:**<ul><li>lens_analysis</li><li>lens_incident_report</li><li>lens_forecast</li><li>lens_report</li><li>lens_graphics</li></ul>**Note:** If not specified, it returns contents from all available content types.<br />[Click here](#content-types) to get more details about content types.
 sort_by<br />*`array, optional`* | ["created", "DESC"] | Sort the list of contents.<br />**Available options:**<br />["created", "DESC"]<br />["created", "ASC"]<br />["changed", "DESC"]<br />["changed", "ASC"]<br />["nid", "DESC"]<br />["nid", "ASC"]
@@ -984,7 +984,7 @@ nid | integer | | Yes | Node ID. Also called as "Content ID".
 Parameter | Default | Description
 --- | --- | ---
 lens_type<br />*`string, required`* | | Type of Stratfor Lens product.<br />**Available options:**<br />Threat<br />...
-page<br />*`integer, optional`* | 0 |The page number to start with.<br />0 = First page<br />1 = Second page<Br />and, so on.
+page<br />*`integer, optional`* | 0 | The page number to start with.<br />0 = First page<br />1 = Second page<Br />and, so on.
 limit<br />*`integer, optional`* | 10 | The number of items to return in the response.
 
 ## Get lens library
@@ -2083,7 +2083,7 @@ Parameter | Default | Description
 --- | --- | ---
 lens_type<br />*`string, required`* | | Type of Stratfor Lens product.<br />**Available options:**<br />Threat<br />...
 qid<br />*`string, required`* | | Nodequeue ID
-page<br />*`integer, optional`* | 0 |The page number to start with.<br />0 = First page<br />1 = Second page<Br />and, so on.
+page<br />*`integer, optional`* | 0 | The page number to start with.<br />0 = First page<br />1 = Second page<Br />and, so on.
 limit<br />*`integer, optional`* | 10 | The number of items to return in the response.
 sort_by<br />*`array, optional`* | ["nodequeue_timestamp", "DESC"] | Sort the list of contents.<br />**Available options:**<br />["nodequeue_timestamp", "DESC"]<br />["nodequeue_timestamp", "ASC"]<br />["nodequeue_position", "DESC"]<br />["nodequeue_position", "ASC"]<br />["node_created", "DESC"]<br />["node_created", "ASC"]
 
@@ -2715,16 +2715,19 @@ timestamp<br />*`string, optional`* | {current-timestamp} - (60*60*24*30) | If t
 
 ## Get search results
 
+> Return search results for "europe" keyword, sort by relevance.
+
 ```shell
 curl --request POST \
   --url 'https://api.stratfor.com/api/v3/search/param' \
   --header 'apiKey: YOUR_API_KEY' \
   --header 'Content-Type: application/json' \
   --data '{
-    "lens_type": "Threat",  
+    "lens_type": "Threat",
+    "keywords_include": "europe",
     "page": 0,
-    "limit": 5,
-    ...
+    "limit": 10,
+    "sort_by": ["score", "desc"]
   }'
 ```
 
@@ -2733,6 +2736,11 @@ curl --request POST \
 $curl = curl_init();
 
 $post_fields = array(
+  "lens_type" => "Threat",
+  "keywords_include" => "europe",
+  "page" => 0,
+  "limit" => 10,
+  "sort_by" => array("score", "desc")
 );
 
 curl_setopt_array($curl, array(
@@ -2759,256 +2767,225 @@ else {
 }
 ```
 
-> Response body:
+> Return search results for "europe" keyword, newest first.<br />Response format = drupal_nodes
+
+```shell
+curl --request POST \
+  --url 'https://api.stratfor.com/api/v3/search/param' \
+  --header 'apiKey: YOUR_API_KEY' \
+  --header 'Content-Type: application/json' \
+  --data '{
+    "lens_type": "Threat",
+    "keywords_include": "europe",
+    "page": 0,
+    "limit": 10,
+    "sort_by": ["created", "desc"],
+    "format": "drupal_nodes"
+  }'
+```
+
+```php
+<?php
+$curl = curl_init();
+
+$post_fields = array(
+  "lens_type" => "Threat",
+  "keywords_include" => "europe",
+  "page" => 0,
+  "limit" => 10,
+  "sort_by" => array("created", "desc"),
+  "format" => "drupal_nodes"
+);
+
+curl_setopt_array($curl, array(
+  CURLOPT_CUSTOMREQUEST => "POST",
+  CURLOPT_URL => "https://api.stratfor.com/api/v3/search/param",
+  CURLOPT_HTTPHEADER => array(
+    "apiKey: YOUR_API_KEY",
+    "Content-Type: application/json"
+  ),
+  CURLOPT_POSTFIELDS => json_encode($post_fields),
+  CURLOPT_RETURNTRANSFER => true,
+));
+
+$response = curl_exec($curl);
+$err = curl_error($curl);
+
+curl_close($curl);
+
+if ($err) {
+  echo "cURL Error #:" . $err;
+}
+else {
+  echo $response;
+}
+```
+
+> Response body (`format` not specified in request body):
 
 ```json
 {
-    "total_count": 889,
-    "facet_counts": {
-        "facet_queries": {},
-        "facet_fields": {
-            "sm_vid_WV_Topics": {},
-            "sm_vid_WV_Themes": {},
-            "sm_vid_Countries": {
-                "Europe": 236,
-                "France": 112,
-                "Germany": 103,
-                "Middle East and North Africa": 81,
-                "Americas": 73,
-                "Turkey": 71,
-                "Spain": 63,
-                "United Kingdom": 58,
-                "Italy": 52,
-                "United States": 52,
-                "_empty_": 51,
-                "Belgium": 47,
-                "Greece": 45,
-                "Eurasia": 39,
-                "Russia": 37,
-                "Asia-Pacific": 31,
-                "Libya": 27,
-                "Netherlands": 23,
-                "Morocco": 20,
-                "Sweden": 20,
-                "Ukraine": 19,
-                "Colombia": 17,
-                "Iran": 17,
-                "Sub-Saharan Africa": 17,
-                "Israel": 16,
-                "Austria": 15,
-                "Iraq": 14,
-                "Syria": 13,
-                "Thailand": 11,
-                "Brazil": 10,
-                "China": 10,
-                "Switzerland": 10,
-                "Denmark": 9,
-                "Philippines": 9,
-                "Venezuela": 9,
-                "Hungary": 8,
-                "Mexico": 8,
-                "Pakistan": 8,
-                "Egypt": 7,
-                "Nigeria": 7,
-                "Poland": 7,
-                "South Asia": 7,
-                "Lebanon": 6,
-                "South Korea": 6,
-                "Tunisia": 6,
-                "Bulgaria": 5,
-                "Indonesia": 5,
-                "Macedonia": 5,
-                "North Korea": 5,
-                "Serbia": 5,
-                "Slovakia": 5,
-                "Somalia": 5,
-                "Albania": 4,
-                "Australia": 4,
-                "Jordan": 4,
-                "Malaysia": 4,
-                "Mali": 4,
-                "Montenegro": 4,
-                "Palestinian Territories": 4,
-                "Portugal": 4,
-                "Saudi Arabia": 4,
-                "Yemen": 4,
-                "Afghanistan": 3,
-                "Algeria": 3,
-                "Argentina": 3,
-                "Bosnia and Herzegovina": 3,
-                "Croatia": 3,
-                "Czech Republic": 3,
-                "Czechia": 3,
-                "Ecuador": 3,
-                "Ghana": 3,
-                "India": 3,
-                "Kenya": 3,
-                "Kosovo": 3,
-                "Kyrgyzstan": 3,
-                "Romania": 3,
-                "Bahrain": 2,
-                "Bosnia-Herzegovina": 2,
-                "Cambodia": 2,
-                "Chad": 2,
-                "Cyprus": 2,
-                "Finland": 2,
-                "Gambia": 2,
-                "Guinea Bissau": 2,
-                "Honduras": 2,
-                "Iceland": 2,
-                "Ireland": 2,
-                "Ivory Coast": 2,
-                "Kazakhstan": 2,
-                "Lithuania": 2,
-                "Malta": 2,
-                "Niger": 2,
-                "Norway": 2,
-                "Paraguay": 2,
-                "Peru": 2,
-                "Senegal": 2,
-                "Sierra Leone": 2,
-                "Slovenia": 2,
-                "Armenia": 1,
-                "Azerbaijan": 1
-            },
-            "sm_vid_Article_Type": {},
-            "sm_vid_Analysis_type": {},
-            "sm_vid_Column_Type": {},
-            "sm_vid_Video_Type": {},
-            "sm_vid_Forecast_Type": {
-                "Quarterly": 6,
-                "Annual": 2
-            },
-            "sm_vid_Global_Perspectives_Type": {},
-            "bundle": {
-                "ioi": 524,
-                "lens_item_of_interest": 167,
-                "lens_incident_report": 92,
-                "lens_analysis": 84,
-                "lens_forecast": 8,
-                "lens_perspective": 8,
-                "lens_report": 6
-            },
-            "sm_opencalais_name": {},
-            "ss_threatlens_content_label": {
-                "Item of Interest": 525,
-                "Intelligence Update": 234,
-                "Analysis": 92,
-                "Forecast": 8,
-                "Report": 5
-            },
-            "sm_vid_Threat_Type": {
-                "Criminal Activity": 378,
-                "Business Continuity": 304,
-                "Terrorism and Insurgency": 234,
-                "Other": 57,
-                "Industrial Espionage": 27
-            }
-        },
-        "facet_dates": {
-            "ds_created": {
-                "2008-07-01T00:00:00Z": 1,
-                "2012-02-01T00:00:00Z": 1,
-                "2013-02-01T00:00:00Z": 1,
-                "2014-04-01T00:00:00Z": 1,
-                "2014-08-01T00:00:00Z": 1,
-                "2014-09-01T00:00:00Z": 3,
-                "2014-11-01T00:00:00Z": 1,
-                "2015-02-01T00:00:00Z": 1,
-                "2015-04-01T00:00:00Z": 1,
-                "2015-06-01T00:00:00Z": 2,
-                "2015-07-01T00:00:00Z": 1,
-                "2015-08-01T00:00:00Z": 3,
-                "2015-09-01T00:00:00Z": 1,
-                "2015-11-01T00:00:00Z": 8,
-                "2016-01-01T00:00:00Z": 6,
-                "2016-02-01T00:00:00Z": 16,
-                "2016-03-01T00:00:00Z": 14,
-                "2016-04-01T00:00:00Z": 39,
-                "2016-05-01T00:00:00Z": 17,
-                "2016-06-01T00:00:00Z": 20,
-                "2016-07-01T00:00:00Z": 34,
-                "2016-08-01T00:00:00Z": 33,
-                "2016-09-01T00:00:00Z": 35,
-                "2016-10-01T00:00:00Z": 37,
-                "2016-11-01T00:00:00Z": 48,
-                "2016-12-01T00:00:00Z": 40,
-                "2017-01-01T00:00:00Z": 25,
-                "2017-02-01T00:00:00Z": 24,
-                "2017-03-01T00:00:00Z": 36,
-                "2017-04-01T00:00:00Z": 25,
-                "2017-05-01T00:00:00Z": 37,
-                "2017-06-01T00:00:00Z": 29,
-                "2017-07-01T00:00:00Z": 41,
-                "2017-08-01T00:00:00Z": 38,
-                "2017-09-01T00:00:00Z": 26,
-                "2017-10-01T00:00:00Z": 30,
-                "2017-11-01T00:00:00Z": 20,
-                "2017-12-01T00:00:00Z": 39,
-                "2018-01-01T00:00:00Z": 27,
-                "2018-02-01T00:00:00Z": 27,
-                "2018-03-01T00:00:00Z": 21,
-                "2018-04-01T00:00:00Z": 23,
-                "2018-05-01T00:00:00Z": 30,
-                "2018-06-01T00:00:00Z": 27,
-                "gap": "+1MONTH",
-                "start": "2008-07-01T00:00:00Z",
-                "end": "2018-08-01T00:00:00Z"
-            }
-        },
-        "facet_ranges": {},
-        "facet_intervals": {},
-        "facet_dates_years": {
-            "ds_created": {
-                "gap": "+1YEAR",
-                "start": "2008-07-01T00:00:00Z",
-                "end": "2018-08-01T00:00:00Z",
-                "2008-01-01T00:00:00Z": 1,
-                "2012-01-01T00:00:00Z": 1,
-                "2013-01-01T00:00:00Z": 1,
-                "2014-01-01T00:00:00Z": 6,
-                "2015-01-01T00:00:00Z": 17,
-                "2016-01-01T00:00:00Z": 339,
-                "2017-01-01T00:00:00Z": 370,
-                "2018-01-01T00:00:00Z": 155
-            }
-        }
+  "total_count": 374,
+  "nodes": [
+    {
+      "id": "hak4nf/node/290232",
+      "entity_type": "node",
+      "bundle": "lens_incident_report",
+      "label": "Iran/France/Germany/Belgium/Austria: Iranian Diplomat Allegedly Organized Plot Against an Opposition Rally in Paris",
+      "teaser": "The presence of high-profile Western figures at the rally highlights the risk such plots pose to personnel.",
+      "is_uid": 237367,
+      "ds_created": "2018-07-03T20:28:00Z",
+      "ds_changed": "2018-07-03T20:28:00Z",
+      "score": 1.4512184,
+      "nid": 290232
     },
-    "nodes": [
+    {
+      "id": "hak4nf/node/290209",
+      "entity_type": "node",
+      "bundle": "lens_incident_report",
+      "label": "Israel/Europe: Criminal Steals Vehicle With Classified Documents Inside",
+      "teaser": "The case is an example of failure in handling of classified materials by protective teams.",
+      "is_uid": 200393,
+      "ds_created": "2018-07-02T18:44:50Z",
+      "ds_changed": "2018-07-02T18:45:45Z",
+      "score": 1.5656879,
+      "nid": 290209
+    },
+    ... another node object here ...
+  ]
+}
+```
+
+> Response body (format = drupal_nodes)
+
+```json
+{
+  "total_count": 374,
+  "nodes": [
+    {
+      "nid": "290232",
+      "type": "lens_incident_report",
+      "title": "Iran/France/Germany/Belgium/Austria: Iranian Diplomat Allegedly Organized Plot Against an Opposition Rally in Paris",
+      "field_teaser_body": "The presence of high-profile Western figures at the rally highlights the risk such plots pose to personnel.",
+      "summary": "",
+      "pov": "Executive protection teams and security departments should review upcoming events and assess their links to groups that Iran frequently targets.",
+      "body": "<p>The Iranian diplomat arrested in Germany in connection with <a href=\"https://threatlens.stratfor.com/content/290197\">a plot to bomb an Iranian opposition rally</a>&nbsp;has been identified as the leader of the group, Austria Presse Agentur reported July 3. Additionally, according to Der Standard, the diplomat allegedly provided the explosive device to a Belgian-Iranian couple during a meeting in Luxembourg and directed them to detonate it at the National Resistance Council of Iran rally organized by the Mujahideen-e-Khalq outside Paris on June 30. Authorities have identified the diplomat as &quot;Assadollah A.&quot; and Austria&#39;s Heute newspaper reported that he works for Iran&#39;s Ministry of Intelligence and Security. Austria has requested Iran&#39;s ambassador in Vienna to suspend the suspect&#39;s diplomatic immunity in light of his apparent involvement in the terrorist plot, a request that comes shortly before Iranian President Hassan Rouhani is set to visit Austria on July 4.</p><p>The revelation that an Iranian diplomat and intelligence ministry member is allegedly behind this plot does not come as a surprise: Iranian diplomatic missions have long been known to <a href=\"https://threatlens.stratfor.com/content/287632\">support state-backed terrorist</a>&nbsp;activities in Europe and elsewhere. The question remains whether there are other plots timed to correspond with the June 30 attack that may still be pending. Personnel remain at risk of being directly targeted or becoming victims of collateral damage. Several high-profile politicians were in attendance at the June 30 rally in Paris, including former New York City Mayor Rudy Giuliani and former Canadian Prime Minister Stephen Harper. Executive protection teams and security departments should review upcoming events and assess their links to groups that Iran frequently targets, including Iranian opposition groups, as well as Israeli and Jewish groups.</p>",
+      "lens_type": [
         {
-            "id": "hak4nf/ioi/8aebf853-90cb-40f5-812c-7040d6d80aef",
-            "bundle": "ioi",
-            "label": "Migrants continue entering France along alpine routes in Pian del Colle",
-            "ds_created": "2018-06-30T23:06:00Z",
-            "ds_changed": "2018-07-02T07:07:25Z",
-            "tid": [
-                80,
-                422
-            ],
-            "ss_reportedby_name": "",
-            "zs_detail": "<p>The latest route into France used by migrants is increasingly coming to the attention of populist Right-wing political groups that have risen to prominence on the back of Europe's migrant crisis.</p>",
-            "zs_summary": "Migrants continue entering France along alpine routes in Pian del Colle",
-            "ss_threatlens_content_label": "Item of Interest",
-            "score": 1.4512062,
-            "taxonomy": [
-                {
-                    "tid": "80",
-                    "vid": "5",
-                    "v_name": "countries",
-                    "name": "Italy",
-                    "code": "IT",
-                    "path_alias": "/region/europe/italy"
-                },
-                {
-                    "tid": "422",
-                    "vid": "21",
-                    "v_name": "threat_type",
-                    "name": "Criminal Activity",
-                    "path_alias": "/taxonomy/term/422"
-                }
-            ]
+          "tid": "473",
+          "vid": "27",
+          "name": "Threat"
         }
-    ]
+      ],
+      "source": {
+        "title": "Austria Presse Agentur",
+        "url": ""
+      },
+      "taxonomy": [
+        {
+          "tid": "421",
+          "vid": "21",
+          "v_name": "threat_type",
+          "name": "Terrorism and Insurgency",
+          "path_alias": "/taxonomy/term/421"
+        },
+        {
+          "tid": "434",
+          "vid": "22",
+          "v_name": "incident_type",
+          "name": "Bombing",
+          "path_alias": "/taxonomy/term/434"
+        },
+        {
+          "tid": "499",
+          "vid": "22",
+          "v_name": "incident_type",
+          "name": "Executive Protection",
+          "path_alias": "/taxonomy/term/499"
+        },
+        {
+          "tid": "742",
+          "vid": "23",
+          "v_name": "incident_target",
+          "name": "Civilians",
+          "path_alias": "/taxonomy/term/742"
+        },
+        {
+          "tid": "464",
+          "vid": "23",
+          "v_name": "incident_target",
+          "name": "Public Figures/Officials",
+          "path_alias": "/taxonomy/term/464"
+        },
+        {
+          "tid": "469",
+          "vid": "24",
+          "v_name": "weapon",
+          "name": "Explosives",
+          "path_alias": "/taxonomy/term/469"
+        }
+      ],
+      "alert": false,
+      "location": {
+        "geom": "POINT (16.3738189 48.2081743)",
+        "geo_type": "point",
+        "lat": "48.208174300000",
+        "lon": "16.373818900000",
+        "left": "16.373818900000",
+        "top": "48.208174300000",
+        "right": "16.373818900000",
+        "bottom": "48.208174300000",
+        "geohash": "u2edk850cxh31"
+      },
+      "promo_image": {
+        "alt": "",
+        "title": "",
+        "caption": "",
+        "sizes": {
+          "thumbnail_notification": "https://www.stratfor.com/sites/default/files/styles/thumbnail_192x108/public/threat-lens-terrorism-2_14.jpg?itok=39jh1Ccf",
+          "thumbnail": "https://www.stratfor.com/sites/default/files/styles/9x6_280x187/public/threat-lens-terrorism-2_14.jpg?itok=W-z9UREi",
+          "medium": "https://www.stratfor.com/sites/default/files/styles/medium_640x200/public/threat-lens-terrorism-2_14.jpg?itok=LzCi88dM",
+          "large": "https://www.stratfor.com/sites/default/files/styles/large_1504x470/public/threat-lens-terrorism-2_14.jpg?itok=B7wrYznf",
+          "16x9": "https://www.stratfor.com/sites/default/files/styles/16x9_640x360/public/threat-lens-terrorism-2_14.jpg?itok=PGktXL0x",
+          "9x6": "https://www.stratfor.com/sites/default/files/styles/9x6_720x480/public/threat-lens-terrorism-2_14.jpg?itok=0rAe1Ix4",
+          "full": "https://www.stratfor.com/sites/default/files/threat-lens-terrorism-2_14.jpg"
+        }
+      },
+      "graphics_type": "",
+      "graphics_image": "",
+      "brightcove_video_id": "",
+      "youtube_video_url": "",
+      "pdf_file": "",
+      "created": "1530649680",
+      "created_formatted": "July 3, 2018 | 20:28 GMT",
+      "changed": "1530649680",
+      "path_alias": "content/iranfrancegermanybelgiumaustria-iranian-diplomat-allegedly-organized-plot-against-opposition",
+      "status": "1",
+      "uuid": "54fae6ad-9146-4f8d-8775-e4b2698aa0ff",
+      "premium": "1",
+      "forecast_type": "",
+      "lens_sections": [],
+      "forecast": "",
+      "thumbnail_url": "",
+      "thumbnail_caption": "",
+      "thumbnail_credit": "",
+      "custom_portal_terms": [],
+      "organizations": [],
+      "analysis_type": "",
+      "crisis_update_nodes": [],
+      "forecast_child_nodes": [],
+      "content_reference": [],
+      "label": "Intelligence Update",
+      "bibblio_id": "233c7e25-ef10-4044-b05d-fba203429160",
+      "bibblio_catalogues": {
+        "worldview": "ff59c341-ef21-461b-a95f-1ab5c6051265",
+        "threatlens": "f96d1308-07d3-4c30-80de-6efd68902c0b"
+      },
+      "score": 1.451218,
+      "ss_threatlens_content_label": "Intelligence Update"
+    },
+    ... another node object here ...
+  ]
 }
 ```
 
@@ -3023,6 +3000,8 @@ Search Threat Lens contents.
 Parameter | Default | Description
 --- | --- | ---
 lens_type<br />*`string, required`* | | Type of Stratfor Lens product.<br />**Available options:**<br />Threat<br />...
-page<br />*`integer, optional`* | 0 |The page number to start with.<br />0 = First page<br />1 = Second page<Br />and, so on.
+keywords_include<br />*`string, required`* | | Search keyword
+page<br />*`integer, optional`* | 0 | The page number to start with.<br />0 = First page<br />1 = Second page<Br />and, so on.
 limit<br />*`integer, optional`* | 10 | The number of items to return in the response.
-... | ... | ...
+sort_by<br />*`array, optional`* | ["created", "desc"] | Sort the search results.<br />**Available options:**<br />["created", "desc"]<br />["created", "asc"]<br />["score", "desc"]
+format<br />*`string, optional`* | | Description ...<br />**Available options:**<br />drupal_nodes<br />...
