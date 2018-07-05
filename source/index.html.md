@@ -1984,14 +1984,53 @@ type<br />*`array, optional`* | | Worldview content types.<br />**Available cont
 taxonomy<br />*`object, optional`* | | Filter by taxonomy terms.<br />[Click here](#taxonomy) to get more details about taxonomy vocabulary and terms.
 sort_by<br />*`array, optional`* | ["created", "DESC"] | Sort the list of contents.<br />**Available options:**<br />["created", "DESC"]<br />["created", "ASC"]<br />["changed", "DESC"]<br />["changed", "ASC"]<br />["nid", "DESC"]<br />["nid", "ASC"]
 
-### Format of "taxonomy" filter:
-
-@todo
-
 **Note for promo_image field in the response body:**<br />Prepend the value in promo image field with “https://www.stratfor.com/sites/default/files/styles/” to get the complete URL of the promo image.
 
+### Format of "taxonomy" filter:
 
-Examples:
+<img src="images/worldview-taxonomy-filter.png" />
+
+**Simple taxonomy filter = (A and B):**
+<br />
+<code>
+{
+  "child_operation":"AND",
+  "children":[
+    A,
+    B
+  ]
+}
+</code>
+
+**Complex taxonomy filter (two levels) =  (A or B or (C and D)):**
+<br />
+
+<code>
+{
+  "child_operation":"OR",
+  "children":[
+    A,
+    B,
+    {
+      "child_operation":"AND",
+      "children":[
+        C,
+        D
+      ]
+    }
+  ]
+}
+</code>
+
+<br />
+
+**article_type = undefined**, for stratfor_sitrep, position_paper and sectioned_content content types.
+
+**sectioned_content_type =undefined**, for article, stratfor_sitrep and position_paper content types.
+
+<br />
+
+**Examples:**
 
 1. Get a list of latest 10 worldview contents.
 2. Get a list of latest 20 worldview contents.
