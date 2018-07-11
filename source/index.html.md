@@ -2099,11 +2099,10 @@ else {
 
 ```json
 {
-  "nid": "290185",
+  "nid": 290185,
   "type": "article",
   "title": "Peaceful Coexistence: China's Path",
   "teaser_body": "China's former ambassador to Bahrain describes China's regional security goals, its position in the trade dispute with the United States and the role of diplomacy to defuse international tension.",
-  "mailout": null,
   "promo_image": {
     "uri": "public://china-trump-diplomacy.jpg",
     "alt": "U.S. President Donald Trump and Chinese President Xi Jinping sit center-stage, flanked by their wives, during a tour of Beijing's Forbidden City in November 2017. ",
@@ -2144,7 +2143,7 @@ else {
   },
   "summary": {
     "title": "Highlights",
-    "description": ""
+    "description": "..."
   },
   "paragraph": [
     {
@@ -2319,47 +2318,93 @@ else {
       "path_alias": "/region/asia-pacific/china"
     }
   ],
-  "sectioned_content_type": [],
-  "forecast_type": [],
-  "overview": "",
-  "youtube_video_url": "",
-  "section": [],
-  "author": [],
-  "www_public_postings_type": [],
-  "source": "",
-  "www_site_page_type": [],
-  "created": "1530610200",
+  "author": [
+    {
+      "nid": "212091",
+      "full_name": "Ben Sheen",
+      "first_name": "Ben",
+      "last_name": "Sheen",
+      "type_of_profile": [],
+      "column_type": [],
+      "template_id": "",
+      "summary": "Ben Sheen is Stratfor's Editorial Director and oversees the company's publishing department. He has a bachelor's degree in journalism from Southampton Solent University. Mr. Sheen worked in journalism before he commissioned into the British Army as an infantry officer in 2004. He specialized in armored warfare, intelligence, surveillance, target acquisition and reconnaissance, urban operations and counterinsurgency. He deployed multiple times to Iraq and Afghanistan and was an instructor at the world-renowned Royal Military Academy, Sandhurst.",
+      "biography": "<div>Ben Sheen is Stratfor&#39;s Editorial Director and oversees the company&#39;s publishing department. He has a bachelor&#39;s degree in journalism from Southampton Solent University. Mr. Sheen worked in journalism before he commissioned into the British Army as an infantry officer in 2004. He specialized in armored warfare, intelligence, surveillance, target acquisition and reconnaissance, urban operations and counterinsurgency. He deployed multiple times to Iraq and Afghanistan and was an instructor at the world-renowned Royal Military Academy, Sandhurst.</div>",
+      "photo": "http://stratpublish.dd:8083/sites/default/files/profiles/photos/Ben-Sheen.jpg",
+      "job_title": "Editorial Director",
+      "organization": null,
+      "organization_link": "",
+      "created": "1415298930",
+      "created_formatted": "Nov 6, 2014 | 18:35 GMT",
+      "changed": "1511151083",
+      "changed_formatted": "Nov 20, 2017 | 04:11 GMT",
+      "path_alias": "people/212091",
+      "status": 1
+    }
+  ],
+  "source": {
+    "title": "Stratfor",
+    "url": "https://www.stratfor.com"
+  },
+  "created": 1530610200,
   "created_formatted": "Jul 3, 2018 | 09:30 GMT",
-  "changed": "1530610202",
+  "changed": 1530610202,
   "changed_formatted": "Jul 3, 2018 | 09:30 GMT",
   "path_alias": "article/peaceful-coexistence-chinas-path",
-  "pdf": "",
-  "status": 1,
-  "metatag": {
-    "title": "What Does China Want?",
-    "description": "China's former ambassador to Bahrain describes China's regional security goals, its position in the trade dispute with the United States and the role of diplomacy to defuse international tension.",
-    "twitter": {
-      "creator:id": "28350927",
-      "creator": "@stratfor",
-      "title": "Peaceful Coexistence: China's Path",
-      "description": "China's former ambassador to Bahrain describes China's regional security goals, its position in the trade dispute with the United States and the role of diplomacy to defuse international tension.",
-      "card": "summary_large_image",
-      "site": "@stratfor",
-      "site:id": "28350927",
-      "image": "https://www.stratfor.com:443/sites/default/files/styles/16x9_small/public/china-trump-diplomacy.jpg?itok=aBSE1nP5"
-    },
-    "og": {
-      "url": "article/peaceful-coexistence-chinas-path",
-      "title": "Peaceful Coexistence: China's Path",
-      "description": "China's former ambassador to Bahrain describes China's regional security goals, its position in the trade dispute with the United States and the role of diplomacy to defuse international tension.",
-      "site_name": "Stratfor",
-      "type": "website",
-      "image": "https://www.stratfor.com:443/sites/default/files/styles/16x9_small/public/china-trump-diplomacy.jpg?itok=aBSE1nP5"
-    },
-    "fb": {
-      "app_id": "129720993742459"
+  "status": 1
+}
+```
+
+> Response body (Stratfor Stratfor Report content):
+
+```json
+{
+  "nid": 283776,
+  "type": "position_paper",
+  "title": "The Geopolitics of Germany",
+  "teaser_body": "Geography has blessed Germany, the wealthiest portion of a capital-rich region, with navigable waterways and arable land. This has helped put Germany at the center of the European system for much of the past two centuries. But as this report will show, geography has also cursed Germany by leaving it exposed on the North European Plain.",
+  "promo_image": {
+    "alt": "Geopolitics of Germany Stratfor Worldview Stratfor Store Report",
+    "title": "The Geopolitics of Germany",
+    "caption": "",
+    "credit": "",
+    "sizes": {
+      "16x9": {
+        "tiny": "16x9_tiny/public/The%20Geopolitics%20of%20Germany.jpg?itok=IEtlS4W5",
+        "small": "16x9_small/public/The%20Geopolitics%20of%20Germany.jpg?itok=rk9mYwLb",
+        "medium": "16x9_medium/public/The%20Geopolitics%20of%20Germany.jpg?itok=1eA9F0eA",
+        "large": "16x9_large/public/The%20Geopolitics%20of%20Germany.jpg?itok=pGRSglET",
+        "full": "16x9_full/public/The%20Geopolitics%20of%20Germany.jpg?itok=n6Bw8VDr"
+      },
+      "square": {
+        "tiny": "square_tiny/public/The%20Geopolitics%20of%20Germany.jpg?itok=DH6aZCnL",
+        "small": "square_small/public/The%20Geopolitics%20of%20Germany.jpg?itok=jYUsCMv2",
+        "medium": "square_medium/public/The%20Geopolitics%20of%20Germany.jpg?itok=xMLqU7ux",
+        "large": "square_large/public/The%20Geopolitics%20of%20Germany.jpg?itok=kJGr8_hF",
+        "full": "square_full/public/The%20Geopolitics%20of%20Germany.jpg?itok=JG77l1wz"
+      },
+      "article": {
+        "tiny": "article_tiny/public/The%20Geopolitics%20of%20Germany.jpg?itok=EsMim3_U",
+        "small": "article_small/public/The%20Geopolitics%20of%20Germany.jpg?itok=I51NS2tm",
+        "medium": "article_medium/public/The%20Geopolitics%20of%20Germany.jpg?itok=Zim7pvy9",
+        "large": "article_large/public/The%20Geopolitics%20of%20Germany.jpg?itok=svZxmkjT",
+        "full": "article_full/public/The%20Geopolitics%20of%20Germany.jpg?itok=ma0oY93N"
+      },
+      "2x1": {
+        "tiny": "2x1_tiny/public/The%20Geopolitics%20of%20Germany.jpg?itok=lYXoREep",
+        "small": "2x1_small/public/The%20Geopolitics%20of%20Germany.jpg?itok=IJOTkB8M",
+        "medium": "2x1_medium/public/The%20Geopolitics%20of%20Germany.jpg?itok=AefiZVtf",
+        "large": "2x1_large/public/The%20Geopolitics%20of%20Germany.jpg?itok=2lGJHt0O",
+        "full": "2x1_full/public/The%20Geopolitics%20of%20Germany.jpg?itok=IeBFG5kz"
+      }
     }
-  }
+  },
+  "pdf": "http://stratpublish.dd:8083/sites/default/files/The%20Geopolitics%20of%20Germany.pdf",
+  "created": 1506116534,
+  "created_formatted": "Sep 22, 2017 | 21:42 GMT",
+  "changed": 1506116534,
+  "changed_formatted": "Sep 22, 2017 | 21:42 GMT",
+  "path_alias": "position-paper/geopolitics-germany",
+  "status": 1
 }
 ```
 
@@ -2573,7 +2618,7 @@ or,
 <br />
 <a href="#retrieve-full-content" class="method get">GET</a> `/api/v3/content/{path_alias}?site=worldview`
 
-### Path parameters
+### Request path parameters
 
 Parameter | Type | Default | Required | Description
 --- | --- | --- | --- | ---
@@ -2592,11 +2637,115 @@ path alias = article/test-test
 <br />
 double encoded path alias = article%252Ftest-test
 
-### Query parameters
+### Request query parameters
 
 Parameter | Type | Default | Required | Description
 --- | --- | --- | --- | ---
 site | string | worldview | Yes | "**site**" parameter must be set to "**worldview**" for Worldview site.
+
+### Response Fields
+
+<aside class="notice">
+  Response fields of <strong>Article (article)</strong> content type are listed below:
+</aside>
+
+Field | Data type | Description
+--- | --- | ---
+nid | integer | Node ID or Content ID.
+type | string | Machine name of content type.
+title | string | Main title of the content.
+teaser_body | string | Short description of the content.
+promo_image | object | Promo image of content.
+summary | object | Summary of the article.<br />**Format of summary field:**<br /><img src="images/summary.png" /><br />If summary does not exist, it returns an empty object.
+paragraph | array | Main content body.<br />The "paragraph" field contains an array of one or more paragraph bundles (or content blocks).<br />If the user is not authenticated or if the paragraph bundles does not exist, it return an empty array.
+article_type | object | Type of article content.<br />**Format of article_type field:**<br /><img src="images/article_type.png" /><br />tid = Taxonomy Term ID<br />vid = Taxonomy Vocabulary ID<br />name = Taxonomy term name
+assessments_type | object | Format is similar to that of 'article_type' field.<br />This field is available only if article_type is **Assessments**. Else, returns empty object.
+column_type | object | Format is similar to that of 'article_type' field.<br />This field is available only if article_type is **Columns**. Else, returns empty object.
+media_type | object | Format is similar to that of 'article_type' field.<br />This field is available only if article_type is **Media**. Else, returns empty object.
+global_perspectives_type | object | Format is similar to that of 'article_type' field.<br />This field is available only if article_type is **Global Perspectives**. Else, returns empty object.
+taxonomy | array | Contains an array of taxonomy objects that has been tagged to a content.<br />**Format of taxonomy field:**<br /><img src="images/taxonomy.png" />
+author | array | Contains an array of author object.<br />**Format of author field:**<br /><img src="images/author.png" style="min-width: 427px;" /><br />If author does not exist, it returns an empty array.
+source | object | Source of content<br />**Format of source field:**<br /><img src="images/source.png" /><br />If source does not exist, it returns an empty object.
+created | integer | Unix timestamp of content created date.
+created_formatted | string | Formatted content created date.
+changed | integer | Unix timestamp of content last modified date.
+changed_formatted | string | Formatted content last modified date.
+path_alias | string | Path alias.
+status | integer | Status of the content.<br />1 = Published<br />0 = Not published
+
+<aside class="notice">
+  Response fields of <strong>Situation Reports (stratfor_sitrep)</strong> content type are listed below:
+</aside>
+
+Field | Data type | Description
+--- | --- | ---
+nid | integer | Node ID or Content ID.
+type | string | Machine name of content type.
+title | string | Main title of the content.
+teaser_body | string | Short description of the content.
+paragraph | array | Main content body.<br />The "paragraph" field contains an array of one or more paragraph bundles (or content blocks).<br />If the user is not authenticated or if the paragraph bundles does not exist, it return an empty array.
+taxonomy | array | Contains an array of taxonomy objects that has been tagged to a content.<br />**Format of taxonomy field:**<br /><img src="images/taxonomy.png" />
+created | integer | Unix timestamp of content created date.
+created_formatted | string | Formatted content created date.
+changed | integer | Unix timestamp of content last modified date.
+changed_formatted | string | Formatted content last modified date.
+path_alias | string | Path alias.
+status | integer | Status of the content.<br />1 = Published<br />0 = Not published
+
+<aside class="notice">
+  Response fields of <strong>Stratfor Store Reports (position_paper)</strong> content type are listed below:
+</aside>
+
+Field | Data type | Description
+--- | --- | ---
+nid | integer | Node ID or Content ID.
+type | string | Machine name of content type.
+title | string | Main title of the content.
+teaser_body | string | Short description of the content.
+pdf | string | Link to the PDF file.
+created | integer | Unix timestamp of content created date.
+created_formatted | string | Formatted content created date.
+changed | integer | Unix timestamp of content last modified date.
+changed_formatted | string | Formatted content last modified date.
+path_alias | string | Path alias.
+status | integer | Status of the content.<br />1 = Published<br />0 = Not published
+
+<aside class="notice">
+  Response fields of <strong>Sectioned Content (sectioned_content)</strong> content type are listed below:
+</aside>
+
+Field | Data type | Description
+--- | --- | ---
+nid | integer | Node ID or Content ID.
+type | string | Machine name of content type.
+title | string | Main title of the content.
+teaser_body | string | Short description of the content.
+overview | string | Overview of the content.
+youtube_video_url | string | Link to youtube video.
+section | array | Main content body.<br />The "section" field contains an array of one or more sections.<br />If the user is not authenticated or if the paragraph bundles does not exist, it return an empty array.
+sectioned_content_type | object | Type of sectioned content.<br />For forecasts contents, sectioned_content_type=Forecasts<br/>**Format of sectioned_content_type field:**<br /><img src="images/sectioned_content_type.png" />
+forecast_type | object | Type of forecast content.<br />**Format of forecast_type field:**<br /><img src="images/forecast_type.png" />
+taxonomy | array | Contains an array of taxonomy objects that has been tagged to a content.<br />**Format of taxonomy field:**<br /><img src="images/taxonomy.png" />
+author | array | Contains an array of author object.<br />**Format of author field:**<br /><img src="images/author.png" style="min-width: 427px;" /><br />If author does not exist, it returns an empty array.
+created | integer | Unix timestamp of content created date.
+created_formatted | string | Formatted content created date.
+changed | integer | Unix timestamp of content last modified date.
+changed_formatted | string | Formatted content last modified date.
+path_alias | string | Path alias.
+status | integer | Status of the content.<br />1 = Published<br />0 = Not published
+
+### These fields are not needed and can be ignored.
+
+Field | Type | Description
+--- | --- | ---
+www_public_postings_type | object | ...
+www_site_page_type | object | ...
+mailout | string | ...
+metatag | object | ...
+opencalais | object | ...
+bibblio_id | string | ...
+bibblio_catalogues | object | ...
+uuid | string |...
 
 The **paragraph** field in the response body contains multiple paragraph bundles (also called as "content blocks").
 
@@ -3120,7 +3269,7 @@ This endpoint returns a list of taxonomy terms in a vocabulary.
 
 <a href="#list-taxonomy" class="method get">GET</a> `/api/v3/taxonomy`
 
-### Query parameters
+### Request query parameters
 
 Parameter | Default | Description
 --- | --- | --- | --- | ---
@@ -3251,7 +3400,7 @@ or,
 <br />
 <a href="#get-taxonomy-term-data" class="method get">GET</a> `/api/v3/taxonomy_meta/{path_alias}`
 
-### Path parameters
+### Request path parameters
 
 Parameter | Type | Default | Required | Description
 --- | --- | --- | --- | ---
