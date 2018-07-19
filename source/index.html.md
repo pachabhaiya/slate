@@ -520,7 +520,7 @@ curl --request POST \
 ```
 
 ```shell
-curl --request POST \
+curl --request GET \
   --url 'https://api.stratfor.com/api/v3/content?site=worldview&page=0&limit=10&type[0]=article&taxonomy[child_operation]=OR&taxonomy[children][0][vocabulary]=article_type&taxonomy[children][0][type]=name&taxonomy[children][0][term]=Assessments' \
   --header 'apiKey: YOUR_API_KEY' \
   --header 'Content-Type: application/json' \
@@ -612,7 +612,7 @@ curl --request POST \
 ```
 
 ```shell
-curl --request POST \
+curl --request GET \
   --url 'https://api.stratfor.com/api/v3/content?site=worldview&page=0&limit=10&type[0]=article&taxonomy[child_operation]=OR&taxonomy[children][0][vocabulary]=article_type&taxonomy[children][0][type]=name&taxonomy[children][0][term]=Assessments&taxonomy[children][1][vocabulary]=article_type&taxonomy[children][1][type]=name&taxonomy[children][1][term]=Snapshots&taxonomy[children][2][vocabulary]=article_type&taxonomy[children][2][type]=name&taxonomy[children][2][term]=Global Perspectives' \
   --header 'apiKey: YOUR_API_KEY' \
   --header 'Content-Type: application/json' \
